@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invest Calculator</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Invest Calculator</h1>
+    <form id="economyForm">
+      <div class="mb-3">
+        <label for="years_of_invest" class="form-label">Years of Investment:</label>
+        <input type="number" class="form-control" id="years_of_invest" placeholder="0" value="30" required>
+      </div>
+      <div class="mb-3">
+        <label for="tax" class="form-label">Tax Rate:</label>
+        <input type="number" class="form-control" id="tax" step="0.01" placeholder="0.17" value="0.17" required>
+      </div>
+      <div class="mb-3">
+        <label for="fortune" class="form-label">Current Fortune:</label>
+        <input type="number" class="form-control" id="fortune" placeholder="800,000" value="800000" required>
+      </div>
+      <div class="mb-3">
+        <label for="monthly_dispose" class="form-label">Monthly Disposable Income:</label>
+        <input type="number" class="form-control" id="monthly_dispose" placeholder="0" value="0" required>
+      </div>
+      <div class="mb-3">
+        <label for="monthly_withdraw" class="form-label">Monthly Withdrawal:</label>
+        <input type="number" class="form-control" id="monthly_withdraw" placeholder="0" value="0" required>
+      </div>
+      <div class="mb-3">
+        <label for="percentages_profit" class="form-label">Percentages Profit:</label>
+        <input type="number" class="form-control" id="percentages_profit" step="0.01" placeholder="0.08" value="0.08" required>
+      </div>
+      <button type="button" class="btn btn-primary" id="proceedButton">Proceed</button>
+    </form>
+
+    <h2 class="mt-5">Results:</h2>
+    <div id="results" class="border rounded p-3"></div>
+  </div>
+
+  <script src="calculator.js"></script> <!-- Include your calculator.js file here -->
+</body>
+</html>
